@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  --1color:#f0deca;
+  --2color:#FAEDDF;
+  --3color: #FCF7F1;
+  --4color: #198597;
+  --5color:#F8A577;
+}
+
+body {
+  background-color: var(--2color);
+}
+
+.dark-color {
+  background-color: var(--1color);
+}
+
+.light-color {
+  background-color: var(--3color);
+}
+
+.aquamarine-color {
+  background-color: var(--4color);
+}
+
+.orange-color {
+  background-color: var(--5color);
+}
+
+.left-color {
+  width: 34%;
+}
+
+.right-color {
+  width: 66%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.right-orange {
+  width: 31%;
+  flex-wrap: wrap;
+  margin-left: 35%;
+  height: 360px;
+}
+
+.left-color,
+.right-color {
+  min-height: 600px;
+}
+
+.row {
+  display: flex;
+}
+
+.col-top {
+  height: 350px;
+}
+
+.col-bottom {
+  height: 300px;
+}
+
+.title {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #FCF7F1;
+}
+
+.hello {
+  padding-top: 17%;
+  /* padding-bottom: 0%; */
+  color: #7A5932;
+}
+
+.akapit {
+  padding-left: 20%;
+  color: #7A5932;
+  padding-top: 8%;
+  text-align: justify;
+  padding-right: 25%;
+  line-height: 30px;
+}
+
+.akapit2 {
+  padding-left: 20%;
+  color: #7A5932;
+  text-align: justify;
+  padding-right: 25%;
+  line-height: 30px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.icon {
+  width: 105px;
+  height: 105px;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.icon-txt {
+  font-weight: 700;
+  color: #7A5932;
+  text-align: center;
+}
+
+@keyframes animacja {
+  0%, 100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+}
+.zigzag {
+  animation: animacja 2s infinite;
+  max-width: 150px;
+  position: absolute;
+  right: 0;
+  bottom: 120px;
+}
+
+.relative {
+  position: relative;
+}
+
+.just {
+  justify-content: center;
+}
+
+.fixed-menu {
+  width: 190px;
+  height: 100%;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  margin-left: 45px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.toggle-btn div {
+  background-color: #7A5932;
+  height: 4px;
+  width: 19px;
+  margin-bottom: 6px;
+}
+
+.nav {
+  transform: rotate(-90deg);
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 100px;
+  align-items: center;
+  color: #7a5932;
+}
+
+.site-title {
+  position: fixed;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  transform-origin: 0 0;
+  right: -43px;
+  left: -161px;
+}
+
+.menu-social {
+  font-size: 12px;
+  letter-spacing: 5px;
+  margin-left: 30px;
+  transform-origin: 0 0;
+  color: #7a5932;
+  display: flex;
+  position: fixed;
+  margin-right: 215px;
+}
+
+.menu-social a:link {
+  color: #7a5932;
+}
+
+.menu-social a:hover {
+  color: #198597;
+}
+
+/* Declare text styles */
+html {
+  font-family: "Open Sans", sans-serif;
+  /* font-family: 'open_sansregular'; */
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 7em;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 1em;
+  line-height: 30px;
+}
+
+h3 {
+  font-size: 3em;
+}
+
+h4 {
+  font-size: 1.15em;
+}/*# sourceMappingURL=style.css.map */

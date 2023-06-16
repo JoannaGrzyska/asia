@@ -1,0 +1,27 @@
+/* Declare text styles */
+html {
+  font-family: "Open Sans", sans-serif;
+  /* font-family: 'open_sansregular'; */
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 7em;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 1em;
+  line-height: 30px;
+}
+
+h3 {
+  font-size: 3em;
+}
+
+h4 {
+  font-size: 1.15em;
+}/*# sourceMappingURL=typography.css.map */
